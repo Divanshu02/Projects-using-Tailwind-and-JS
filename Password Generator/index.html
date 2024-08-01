@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Password Generator</title>
+    <script
+      src="https://kit.fontawesome.com/8bf98b57f4.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="main.js" defer></script>
+  </head>
+  <body class="flex h-[100vh] justify-center items-center bg-fuchsia-950">
+    <div class="w-72 flex flex-col justify-between items-center gap-5">
+      <p class="text-white font-bold text-lg">PASSWORD GENERATOR</p>
+      <div class="relative">
+        <p class="cpy-txt absolute right-0 top-0 text-white bg-red-600 rounded-lg  "></p>
+        <input
+          type="text"
+          readonly
+          name=""
+          id=""
+          placeholder="PASSWORD"
+          class="pwd-field bg-emerald-950 text-violet-200 border-2 w-64 h-12 border-black rounded-md shadow-xl" 
+        />
+        <i
+          class="copy-icon fa-regular fa-copy absolute right-1 top-5 text-amber-400 cursor-pointer z-1"
+        ></i>
+      </div>
+      <div
+        class="flex flex-col gap-5 border-2 border-black shadow-2xl rounded-lg text-white bg-emerald-950 p-3"
+      >
+        <!-- item1 -->
+        <div class="flex flex-col gap-2">
+          <div class="flex justify-between">
+            <p>Password Length</p>
+            <p class="pwd-len">4</p>
+          </div>
+          <p>
+            <input
+              type="range"
+              min="1"
+              max="20"
+              step="1"
+              value="4"
+              class="slider w-[100%] bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 ;"
+              id="myRange" 
+            />
+          </p>
+        </div>
+        <!-- item2 -->
+        <div>
+          <div class="flex gap-4">
+            <input type="checkbox" class="w-4" name="" id="uppercase" checked />
+            <label for="uppercase">Include Uppercase Letters</label>
+          </div>
+          <div class="flex gap-4">
+            <input type="checkbox" class="w-4" name="" id="Lowercase" />
+            <label for="Lowercase">Include Lowercase Letters</label>
+          </div>
+          <div class="flex gap-4">
+            <input type="checkbox" class="w-4" name="" id="Numbers" />
+            <label for="Numbers">Include Numbers</label>
+          </div>
+          <div class="flex gap-4">
+            <input type="checkbox" class="w-4" name="" id="Symbols" />
+            <label for="Symbols">Include Symbols</label>
+          </div>
+        </div>
+        <!-- item3 -->
+        <div class="flex flex-col gap-4">
+          <div class="flex justify-between">
+            <p>Strength</p>
+            <p>
+              <i
+                class="indicator fa-solid fa-lightbulb"
+                style="color: #c36532; text-shadow: 4px 5px 20px gray"
+              ></i>
+            </p>
+          </div>
+          <div class="self-center">
+            <button
+              class="generate-btn border-2 shadow-lg w-60 p-2 rounded-md bg-teal-600 hover:bg-teal-800"
+            >
+              Generate Password
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

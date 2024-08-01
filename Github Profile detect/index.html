@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Github Profile Detect</title>
+    <script
+      src="https://kit.fontawesome.com/8bf98b57f4.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="main.js" defer></script>
+  </head>
+  <body class="web-body bg-slate-900 font-mono">
+    <div class="wrapper  ">
+      <div class=" w-6/12 m-auto text-white mt-14">
+        <div class="flex justify-between mb-10">
+          <h1 class="heading font-bold font-mono text-3xl">ProfileDetective</h1>
+          <div class="flex gap-3 items-center">
+            <h1 class="font-mono">LIGHT</h1>
+            <img src="./images/brightness.png" width="40px" class="light-mode cursor-pointer" alt="" />
+          </div>
+        </div>
+        <div
+          class="item-1 flex relative justify-between bg-blue-950 bg-no-repeat bg-[10px] h-[100%] items-center bg-[url('./images/magnifying.png')] rounded-[15px] p-4 mb-8"
+        >
+          <input
+            type="search"
+            name=""
+            id=""
+            class="w-[70%] pl-[80px] bg-red-950 bg-transparent h-10 outline-none text-xl font-mono "
+            placeholder="Enter a Github username..."
+          />
+          <p class="not-found hidden absolute right-28 top-[-20px] z-10 bg-red-600 rounded-lg p-2">Username not found</p>
+          <button
+            class="search-but absolute   right-0 w-[15%] h-[80%] m-2 font-mono bg-blue-400 text-lg rounded-md hover:bg-blue-800"
+          >
+            search
+          </button>
+        </div>
+        <div class="item-2   p-7 bg-blue-950 rounded-2xl">
+          <div class="  flex flex-col gap-12">
+            <div
+              class="flex  items-center justify-between "
+            >
+              <div class="flex items-center gap-12">
+                <img src="" alt="" class="user-logo w-28 rounded-full" />
+                <div class="flex flex-col gap-4 font-mono">
+                  <div>
+                    <h1 class="user-name text-2xl"></h1>
+                    <a
+                      href=""
+                      class="user-id text-blue-600 underline"
+                      target="_blank"
+                    ></a>
+                  </div>
+                  <p class="user-bio"></p>
+                </div>
+              </div>
+              <p class="joining-data font-mono"></p>
+            </div>
+            <!-- 2nd item -->
+            <div class="  flex justify-end">
+              <div
+                class=" inner-item flex gap-16 w-[77%] p-4 font-mono bg-sky-900 bg-blend-normal rounded-xl "
+              >
+                <div class="flex flex-col">
+                  <p class="">Repos</p>
+                  <h1 class="user-repo text-lg font-bold"></h1>
+                </div>
+                <div class="flex flex-col">
+                  <p class="">Followers</p>
+                  <h1 class="user-followers text-lg font-bold"></h1>
+                </div>
+                <div class="flex flex-col">
+                  <p class="">Following</p>
+                  <h1 class="user-following text-lg font-bold"></h1>
+                </div>
+              </div>
+            </div>
+            <!-- 3rd item -->
+            <div class="flex justify-center  ">
+              <div class="flex gap-20">
+                <div class="flex flex-col gap-4">
+                  <div>
+                    <i
+                      class="fa-solid fa-location-dot fa-xl"
+                      style="color: #05cdff"
+                    ></i>
+                    <a class="user-location"></a>
+                  </div>
+                  <div>
+                    <i
+                      class="fa-brands fa-twitter fa-lg"
+                      style="color: #02f7e7"
+                    ></i>
+                    <a
+                      class="twitter-username underline cursor-pointer"
+                      href=""
+                      target="_blank"
+                    ></a>
+                  </div>
+                </div>
+                <div class="flex flex-col gap-4">
+                  <div class="flex gap-1">
+                    <img
+                      src="./images/blog.png"
+                      class="bg-white"
+                      width="30px"
+                      alt=""
+                    />
+                    <a
+                      class="blog underline cursor-pointer"
+                      href=""
+                      target="_blank"
+                    ></a>
+                  </div>
+                  <div class="flex items-center gap-1">
+                    <img src="./images/company.png" width="30px" alt="" />
+                    <a class="company"></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
